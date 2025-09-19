@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, rgb(47, 44, 44), rgb(12, 12, 12));
+  min-height: 100vh;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* full screen minus header */
+}
+
+
+/* Left: Products */
+.left {
+  background-color: rgba(255, 0, 0, 0.2); /* transparent red for testing */
+  flex: 2;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+/* Right: Summary */
+.right {
+  background-color: rgba(0, 0, 255, 0.2); /* transparent blue for testing */
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  height: fit-content;
+  position: sticky;
+  top: 20px; /* summary stays in view */
+}

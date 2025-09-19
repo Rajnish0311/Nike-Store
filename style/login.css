@@ -1,0 +1,125 @@
+*{
+    margin: 0;padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+width: 100%;
+background-image: linear-gradient(to bottom right  ,rgb(47, 44, 44),rgb(12, 12, 12));
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.form{
+width: 90%;
+max-width: 450px;
+min-width: 350px;
+background-color: white;
+padding: 55px;
+text-align: center;
+border-radius: 10px;
+box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+
+}
+.form h1{
+    color: rgb(8, 8, 8);
+font-size: 30px;
+
+
+}
+.back{
+display: flex;
+
+text-decoration: none;
+color: #ffffff;
+background-color: black;
+border-radius: 10px;
+padding: 5px;
+
+}
+a{
+    text-decoration: none;
+}
+.form .underline{
+    width: 30px;
+height: 4px;
+background-color: rgb(12, 12, 12);
+margin: 10px auto 50px auto;
+transition: 1s;
+border-radius: 5px;
+
+}
+.inputfield{
+background: #eaeaea;
+margin: 15px 0px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+max-height: 60px;
+transition: max height 0.5s;
+overflow: hidden;
+transition: 1s;
+}
+.inputfield input{
+    width: 100%;
+background: transparent;
+border: 0;
+outline: 0;
+padding: 18px 15px;
+
+}
+.inputfield i{
+    margin-left: 15px;
+color: #999;
+
+}
+form p {
+
+font-size: 13px;
+
+}
+#y{
+text-decoration: none;
+color: rgb(5, 5, 5);
+font-size: 13px;
+
+}
+.btn{
+width: 100%;
+display: flex;
+justify-content: space-between;
+
+}
+.btn button{
+flex-basis: 48%;
+background: rgb(12, 12, 12);
+height: 40px;
+border-radius: 20px;
+border: 0;
+outline: 0;
+cursor: pointer;
+transition: background 1s;
+color: white;
+transition: background 1s;
+}
+button.disable{
+background: #eaeaea;
+color: #555;
+
+
+}
+@keyframes appear{
+    from{
+      opacity: 0;
+    scale: 0.5;
+    }
+    to{
+      opacity: 1;
+      scale: 1;}
+  
+  }
+  .blockc{
+    animation: appear linear;
+    animation-duration: 0.5s;
+  }
